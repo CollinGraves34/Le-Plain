@@ -28,15 +28,68 @@
     </nav>
 
     <section>
-        <div id="header" class="jumbotron jumbotron-fluid d-flex flex-column justify-content-center align-items-center text-center m-0">
+        <div id="header" class="jumbotron jumbotron-fluid d-flex flex-column justify-content-center align-items-center text-center m-0 text-center">
             <div class="container">
               <h1 class="display-3">Le Pain</h1>
               <p class="lead">When flour and water come together</p>
-              <a class="btn btn-dark btn-lg" href="#gallery" role="button">Voir Les Pains</a>
+              <a id="galleryButton" class="btn btn-dark btn-lg" href="#gallery" role="button">Voir Les Pains</a>
             </div>
         </div>
     </section>
+    <!--Cards/TypeofBread-->
+    <div id="gallery" class="bg-dark p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/baguette.jpg" class="card-img-top" alt="Baugette Bread">
+                        <div class="card-body">
+                          <h5 class="card-title">Baguette</h5>
+                          <p class="card-text">A baguette is a long, thin loaf of French bread that is commonly made from basic lean dough. It is distinguishable by its length and crisp crust.</p>
+                          <hr>
+                          <a href="https://en.wikipedia.org/wiki/Baguette" target="_blank" class="btn btn-info"><span>Learn More </span></a>
+                          <!--  Heart class: far = Empty-->
+                          <!--  Heart class: fas = Filled-->
+                          <a id="heart1" class="btn heart btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/challah.jpg" class="card-img-top" alt="Challah Bread">
+                        <div class="card-body">
+                          <h5 class="card-title">Challah</h5>
+                          <p class="card-text">Challah is a special bread in Jewish cuisine, usually braided and typically eaten on ceremonial occasions such as Shabbat and major Jewish holidays.</p>
+                          <hr>
+                          <a href="https://en.wikipedia.org/wiki/Challah" target="_blank" class="btn btn-info"><span>Learn More</span></a>
+                          <!--  Heart class: far = Empty-->
+                          <!--  Heart class: fas = Filled-->
+                          <a id="heart2" class="btn heart btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/sourdough.jpg" class="card-img-top" alt="Sourdough Bread">
+                        <div class="card-body">
+                          <h5 class="card-title"></h5>
+                          <p class="card-text">Sourdough bread is made by the fermentation of dough using naturally occurring lactobacilli and yeast. It uses biological leavening.</p>
+                          <hr>
+                          <a href="https://en.wikipedia.org/wiki/Sourdough" target="_blank" class="btn btn-info"><span>Learn More</span></a>
+                          <!--  Heart class: far = Empty-->
+                          <!--  Heart class: fas = Filled-->
+                          <a id="heart3" class="btn heart btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
 
+
+    <!--Local Js-->
+    <script src="./main.js"></script>
     <!--Bootstrap JS-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">

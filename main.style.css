@@ -1,11 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&display=swap');
 /* font-family: 'IM Fell French Canon', serif; */
 
+@media (max-width: 576px){
+    #header{
+        padding: 0px 100px;
+    }
+
+
+
+}
+
 * {
     font-family: 'IM Fell French Canon', serif;
+    scroll-behavior: smooth;
+}
+
+
+#galleryButton {
+    transition: 1s;
+}
+#galleryButton:hover {
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: black;
+}
+
+.heart{
+    float: right;
+    padding: 2px 10px;
+    font-size: 15px;
+}
+.heart:hover{
+    padding: 5px 15px;
+}
+
+.bg-heart-clicked {
+    background-color: rgb(248, 104, 104);
+}
+
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    font-size: 18px;
+}
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.btn:hover span {
+    padding-right: 25px;
+}
+.btn:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
 #header {
     color: white;
-    background-image: url(./images/);
+    background-image: url(./images/header.jpg);
+    height: 95vh;
+    background-position: center;
+    background-size: cover;
 }
